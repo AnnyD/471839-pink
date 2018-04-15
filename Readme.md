@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Дорофеева](https://up.htmlacademy.ru/adaptive/14/user/471839).
-* Наставник: `Неизвестно`.
+* Наставник: `Анастасия Шевченко`.
 
 ---
 
