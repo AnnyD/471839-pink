@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#" aria-label="Логотип компании Пинк">Pink</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle button" type="button" aria-label="Открыть главное меню"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="#">Фотографии</a></li>
+          <li class="site-list__item"><a href="#">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content gallery">
+      <div class="main-content__header">
+        <h1 class="main-content__title">Фотографии пользователей</h1>
+      </div>
+      <section class="post-gallery">
+        <p class="post-gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+        <div class="photo-post">
+          <img class="photo-post__image photo-post__image--panorama" src="#" alt="Панорамный вид">
+          <span class="photo-post__name">Анна</span><span class="photo-post__time">5 минут назад</span>
+          <p class="photo-post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <span class="photo-post__heart"></span><span class="photo-post__likes">Нравится: 215</span>
+        </div>
+        <div class="photo-post">
+          <img class="photo-post" src="#" alt="Машина на парковке под прицелом камеры">
+          <span class="photo-post__name">Левон</span><span class="photo-gallery__time">5 часов назад</span>
+          <p class="photo-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <span class="photo-post__heart"></span><span class="photo-gallery__likes">Нравится: 356</span>
+        </div>
+        <div class="photo-post">
+          <img class="photo-post__image" src="#" alt="Ударная установка">
+          <span class="photo-post__name">Антон</span><span class="photo-gallery__time">12 часов назад</span>
+          <p class="photo-post__text">Соседи будут рады!</p>
+          <span class="photo-post__heart"></span><span class="photo-gallery__likes">Нравится: 666</span>
+        </div>
+        <div class="photo-post">
+          <img class="photo-post" src="#" alt="Офис в стиле хай-тек">
+          <span class="photo-post__name">Борис</span><span class="photo-gallery__time">20 часов назад</span>
+          <p class="photo-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <span class="photo-post__heart"></span><span class="photo-gallery__likes">Нравится: 215</span>
+        </div>
+        <div class="photo-post">
+          <img class="photo-post" src="#" alt="Рынок на Кубани">
+          <span class="photo-post__name">Сергей</span><span class="photo-gallery__time">25 часов назад</span>
+          <p class="photo-post__text">Самая кубанская в мире!</p>
+          <span class="photo-post__heart"></span><span class="photo-gallery__likes">Нравится: 4</span>
+        </div>
+        <div class="photo-post">
+          <img class="photo-post" src="#" alt="Вид с вершины горы">
+          <span class="photo-post__name">Максим</span><span class="photo-gallery__time">40 часов назад</span>
+          <p class="photo-post__text">Где снег-то?!</p>
+          <span class="photo-post__heart"></span><span class="photo-gallery__likes">Нравится: 150</span>
+        </div>
+        <div class="photo-post">
+          <img class="photo-post" src="#" alt="Вид самолета из другого самолета">
+          <span class="photo-post__name">Максим</span><span class="photo-gallery__time">45 часов назад</span>
+          <p class="photo-post__text">Всем GM и взаимные лайки!!</p>
+          <span class="photo-post__heart"></span><span class="photo-gallery__likes">Нравится: 2560</span>
+        </div>
+      </section>
+      <section class="download">
+        <p class="download-text">Затмите их всех! Выкладывайте все что накопилось в телефоне!
+        </p>
+        <div class="download-photo">
+          <img class="download-image" src="#" atl="Заснеженное лесное шоссе">
+          <div class="download-tools">
+            <button class="download-tools__tool download-tools__tools--clip" type="button"></button>
+            <button class="download-tools__tool  download-tools__tool--fill" type="button"></button>
+            <button class="download-tools__tool download-tools__tool--contrast" type="button"></button>
+            <div class="download-tools__scale">
+              <input type="range" min="1" max="10">
+            </div>
+            <button class="download__button  download__button--post" type="submit">Запостить</button>
+            <button class="download__button  download__button--cancel" type="reset">Отмена</button>
+          </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__link" href="index.html">
+      <img class="main-footer__logo" src="#" alt="Логотип приложения Пинк">
+      <span class="main-footer__text">Pink</span>
+    </a>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/" aria-label="Ссылка на сайт Твиттер">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Ссылка на сайт Фейсбук">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com" aria-label="Ссылка на сайт Ютуб">Ютуб</a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив продвинутого html и css">
+          <img class="copyright__logo" src="#" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
+  </body>
+
+</html>

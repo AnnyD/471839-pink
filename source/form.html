@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html" aria-label="Логотип компании Пинк">Pink</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle button" type="button" aria-label="Открыть главное меню"></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="#">Фотографии</a></li>
+          <li class="site-list__item"><a href="#">Конкурс</a></li>
+          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="challenge-content">
+      <div class="challenge-content__header">
+        <h1 class="challenge-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <p class="challenge-content__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+      </p>
+      <form class="challenge-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="user-info">
+          <legend class="visually-hidden">Введите ваши данные</legend>
+          <label class="user-info__label" for="second-name">Фамилия:</label>
+          <input id="second-name" class="user-info__input" type="text" name="second-name" placeholder="Укажите фамилию*" required>
+          <label class="user-info__label" for="name">Имя:</label>
+          <input id="name" class="user-info__input" type="text" name="name" placeholder="Введите ваше имя*" required>
+          <label class="user-info__label" for="fathers-name">Отчество:</label>
+          <input id="fathers-name" class="user-info__input" type="text" name="fathers-name" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="user-results">
+          <legend class="user-results__title">Ваши безбашенные достижения в путешествии</legend>
+          <label class="user-results__label" for="selfie">Сделал селфи с акулой</label>
+          <input id="selfie" class="user-results__input" type="checkbox" name="selfie" checked>
+          <label class="user-results__label" for="sunburn">Обгорел на пляже</label>
+          <input id="sunburn" class="user-results__input" type="checkbox" name="sunburn" checked>
+          <label class="user-results__label" for="chack">Видел Чака Норриса</label>
+          <input id="chack" class="user-results__input" type="checkbox" name="chack">
+          <label class="user-results__label" for="gift">Накупил сувениров</label>
+          <input id="gift" class="user-results__input" type="checkbox" name="gift">
+          <label class="user-results__label" for="tower">Удержал башню</label>
+          <input id="tower" class="user-results__input" type="checkbox" name="tower" checked>
+          <label class="user-results__label" for="hotel">Разгромил отель</label>
+          <input id="hotel" class="user-results__input" type="checkbox" name="hotel">
+        </fieldset>
+        <fieldset class="user-contacts">
+          <legend class="visually-hidden">Укажите Ваши контактные данные</legend>
+          <label class="user-contacts__label" for="tel">Номер телефона</label>
+          <input id="tel" class="user-contacts__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          <label class="user-contacts__label" for="email">Адрес почты</label>
+          <input id="email" class="user-contacts__input" type="email" name="email" placeholder="Введите почту*" required>
+        </fieldset>
+        <fieldset class="user-app">
+          <legend class="user-app__legend">С каким приложением путешествовали?</legend>
+          <label class="user-app__label" for="app-1">Pink для iOS</label>
+          <input id="app-1" class="user-app__input" type="radio" name="app" checked>
+          <label class="user-app__label" for="app-2">Pink на Android</label>
+          <input id="app-2" class="user-app__input" type="radio" name="app">
+          <label class="user-app__label" for="app-3">Windows Phone</label>
+          <input id="app-3" class="user-app__input" type="radio" name="app">
+        </fieldset>
+        <div class="user-comments">
+          <label class="user-comments__label" for="comments"></label>
+          <textarea id="comments" class="user-comments__textarea" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+        <button class="challenge-form__button" type="submit" aria-label="Кнопка Отправить форму">Отправить форму</button>
+        <p class="challenge-form__text">* - Обязательные поля</p>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__link" href="index.html">
+      <img class="main-footer__logo" src="#" alt="Логотип приложения Пинк">
+      <span class="main-footer__text">Pink</span>
+    </a>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/" aria-label="Ссылка на сайт Твиттер">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Ссылка на сайт Фейсбук">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com" aria-label="Ссылка на сайт Ютуб">Ютуб</a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив продвинутого html и css">
+          <img class="copyright__logo" src="#" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
+    <section class="modal-error">
+      <h3 class="modal-error">Что-то пошло не так!</h3>
+      <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal-error__footer">
+        <button class="modal-error__button" type="button">Ок</button>
+      </div>
+    </section>
+    <section class="modal-request">
+      <h3 class="modal-request__title">Ваша заявка отправлена</h3>
+      <p class="modal-request__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal-request__footer">
+        <button class="modal-request__button" type="button">Закрыть окно</button>
+      </div>
+    </section>
+  </body>
+
+</html>
