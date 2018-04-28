@@ -4,18 +4,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html" aria-label="Логотип компании Пинк">Pink</a>
       <nav class="main-nav">
-        <button class="main-nav__toggle button" type="button" aria-label="Открыть главное меню"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="#">Фотографии</a></li>
-          <li class="site-list__item"><a href="#">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Главная</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Фотографии</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Конкурс</a></li>
+          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">HTML Academy</a></li>
         </ul>
       </nav>
     </header>
@@ -23,7 +24,7 @@
       <div class="challenge-content__header">
         <h1 class="challenge-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="challenge-content__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+      <p class="challenge-content__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       </p>
       <form class="challenge-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="user-info">
@@ -67,18 +68,17 @@
           <input id="app-3" class="user-app__input" type="radio" name="app">
         </fieldset>
         <div class="user-comments">
-          <label class="user-comments__label" for="comments"></label>
+          <label class="user-comments__label" for="comments">Опишите свои эмоции</label>
           <textarea id="comments" class="user-comments__textarea" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
         <button class="challenge-form__button" type="submit" aria-label="Кнопка Отправить форму">Отправить форму</button>
-        <p class="challenge-form__text">* - Обязательные поля</p>
+        <p class="challenge-form__text"><span class="challenge-form__pic">*</span> - Обязательные поля</p>
       </form>
     </main>
     <footer class="main-footer">
       <a class="main-footer__link" href="index.html">
-      <img class="main-footer__logo" src="#" alt="Логотип приложения Пинк">
-      <span class="main-footer__text">Pink</span>
-    </a>
+      <img class="main-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
+          </a>
       <section class="social">
         <ul class="social__list">
           <li class="social__item">
@@ -95,12 +95,12 @@
       <section class="copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив продвинутого html и css">
-          <img class="copyright__logo" src="#" alt="Логотип HTML Academy">
+          <img class="copyright__logo" src="img/logo-htmlacademy-red.svg" width="27" height="33" alt="Логотип HTML Academy">
         </a>
       </section>
     </footer>
     <section class="modal-error">
-      <h3 class="modal-error">Что-то пошло не так!</h3>
+      <h3 class="modal-error__title">Что-то пошло не так!</h3>
       <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <div class="modal-error__footer">
         <button class="modal-error__button" type="button">Ок</button>
