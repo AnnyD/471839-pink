@@ -64,3 +64,51 @@
   text-align: center;
   padding-bottom: 37px;
 }
+
+.download-app__title {
+  display: none;
+}
+@media (min-width: 660px) {
+  .download-app {
+    display: flex;
+    flex-direction: column;
+    height: 620px;
+    padding: 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 470px 550px, 660px 620px;
+    background-position: bottom center, center center;
+  }
+
+  .download-app__title {
+    display: block;
+    font-size: 40px;
+    line-height: 47px;
+    font-weight: 300;
+    width: 230px;
+    text-align: center;
+    margin: 95px 0 40px 58px;
+    padding: 0;
+  }
+
+  .download-app__button {
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .download-app__icon {
+    width: 300px;
+    margin: 0 0 35px 20px;
+  }
+
+  .download-app__text {
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
+}
