@@ -21,10 +21,6 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
-.page-header__logo {
-  display: none;
-}
 @media (min-width: 660px) {
   .page-header__wrapper {
     min-height: 108px;
@@ -36,11 +32,18 @@
 }
 @media (min-width: 1200px) {
   .page-header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header__container {
     display: flex;
     width: 940px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-shrink: 0;
     margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    width: 150px;
+    border: none;
   }
 }

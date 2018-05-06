@@ -14,6 +14,10 @@
   margin: 0;
 }
 
+.review__text {
+  display: none;
+}
+
 .review__autor {
   display: block;
   font-size: 18px;
@@ -31,4 +35,40 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
+}
+
+.slider__wrapper {
+  width: 140px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .review {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .review__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__autor {
+    margin-bottom: 15px;
+  }
+
+  .review__text {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .review__comment {
+    width: 620px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 30px;
+    order: -1;
+  }
 }
