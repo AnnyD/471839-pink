@@ -9,19 +9,24 @@
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#" aria-label="Логотип компании Пинк">Pink</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Главная</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Фотографии</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Конкурс</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="index.html" aria-label="Логотип компании Пинк"><img src="img/logo-pink-white-mobile.svg" width="75" height="21" class="page-header__logo" alt="Логотип компании Пинк"></a>
+
+          <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Главная</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Фотографии</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Конкурс</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-content gallery">
-      <div class="main-content__header">
+      <div class=" main-content__header">
         <h1 class="main-content__title">Фотографии пользователей</h1>
       </div>
       <section class="post-gallery">
@@ -36,52 +41,54 @@
             <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 215</span>
           </div>
         </div>
-        <div class="photo-post ">
-          <img class="photo-post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина на парковке под прицелом камеры">
-          <div class="photo-post__wrapper">
-            <span class="photo-post__name ">Левон</span><span class="photo-gallery__time ">(5 часов назад)</span>
-            <p class="photo-post__text ">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 356</span>
+        <div class="photo-post__wrap">
+          <div class="photo-post ">
+            <img class="photo-post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Машина на парковке под прицелом камеры">
+            <div class="photo-post__wrapper">
+              <span class="photo-post__name ">Левон</span><span class="photo-gallery__time ">(5 часов назад)</span>
+              <p class="photo-post__text ">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 356</span>
+            </div>
           </div>
-        </div>
-        <div class="photo-post ">
-          <img class="photo-post__image " src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" width="280" height="180" alt="Ударная установка ">
-          <div class="photo-post__wrapper">
-            <span class="photo-post__name ">Антон</span><span class="photo-gallery__time ">(12 часов назад)</span>
-            <p class="photo-post__text ">Соседи будут рады!</p>
-            <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 666</span>
+          <div class="photo-post ">
+            <img class="photo-post__image " src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" width="280" height="180" alt="Ударная установка ">
+            <div class="photo-post__wrapper">
+              <span class="photo-post__name ">Антон</span><span class="photo-gallery__time ">(12 часов назад)</span>
+              <p class="photo-post__text ">Соседи будут рады!</p>
+              <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 666</span>
+            </div>
           </div>
-        </div>
-        <div class="photo-post ">
-          <img class="photo-post__image" src="img/photo-window-mobile@1x.jpg" alt="Офис в стиле хай-тек ">
-          <div class="photo-post__wrapper">
-            <span class="photo-post__name ">Борис</span><span class="photo-gallery__time ">(20 часов назад)</span>
-            <p class="photo-post__text ">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 215</span>
+          <div class="photo-post ">
+            <img class="photo-post__image" src="img/photo-window-mobile@1x.jpg" alt="Офис в стиле хай-тек ">
+            <div class="photo-post__wrapper">
+              <span class="photo-post__name ">Борис</span><span class="photo-gallery__time ">(20 часов назад)</span>
+              <p class="photo-post__text ">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 215</span>
+            </div>
           </div>
-        </div>
-        <div class="photo-post ">
-          <img class="photo-post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок на Кубани ">
-          <div class="photo-post__wrapper">
-            <span class="photo-post__name ">Сергей</span><span class="photo-gallery__time ">(25 часов назад)</span>
-            <p class="photo-post__text ">Самая кубанская в мире!</p>
-            <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 4</span>
+          <div class="photo-post ">
+            <img class="photo-post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок на Кубани ">
+            <div class="photo-post__wrapper">
+              <span class="photo-post__name ">Сергей</span><span class="photo-gallery__time ">(25 часов назад)</span>
+              <p class="photo-post__text ">Самая кубанская в мире!</p>
+              <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 4</span>
+            </div>
           </div>
-        </div>
-        <div class="photo-post ">
-          <img class="photo-post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с вершины горы ">
-          <div class="photo-post__wrapper">
-            <span class="photo-post__name ">Максим</span><span class="photo-gallery__time ">(40 часов назад)</span>
-            <p class="photo-post__text ">Где снег-то?!</p>
-            <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 150</span>
+          <div class="photo-post ">
+            <img class="photo-post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с вершины горы ">
+            <div class="photo-post__wrapper">
+              <span class="photo-post__name ">Максим</span><span class="photo-gallery__time ">(40 часов назад)</span>
+              <p class="photo-post__text ">Где снег-то?!</p>
+              <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 150</span>
+            </div>
           </div>
-        </div>
-        <div class="photo-post ">
-          <img class="photo-post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Вид самолета из другого самолета ">
-          <div class="photo-post__wrapper">
-            <span class="photo-post__name ">Максим</span><span class="photo-gallery__time ">(45 часов назад)</span>
-            <p class="photo-post__text ">Всем GM и взаимные лайки!!</p>
-            <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 2560</span>
+          <div class="photo-post ">
+            <img class="photo-post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Вид самолета из другого самолета ">
+            <div class="photo-post__wrapper">
+              <span class="photo-post__name ">Максим</span><span class="photo-gallery__time ">(45 часов назад)</span>
+              <p class="photo-post__text ">Всем GM и взаимные лайки!!</p>
+              <span class="photo-post__heart "></span><span class="photo-post__likes ">Нравится: 2560</span>
+            </div>
           </div>
         </div>
       </section>
@@ -90,13 +97,15 @@
         </p>
         <div class="download__photo ">
           <img class="download__image " src="img/photo-road-mobile@1x.jpg" width="280" height="375" atl="Заснеженное лесное шоссе ">
-          <div class="download__tools ">
-            <button class="download__tool download__tool--clip " type="button "></button>
-            <button class="download__tool download__tool--fill " type="button "></button>
-            <button class="download__tool download__tool--contrast " type="button "></button>
-          </div>
-          <div class="download__tools-scale ">
-            <input class="download__input" type="range " min="1 " max="10 ">
+          <div class="download__tools-wrapper">
+            <div class="download__tools ">
+              <button class="download__tool download__tool--clip " type="button "></button>
+              <button class="download__tool download__tool--fill " type="button "></button>
+              <button class="download__tool download__tool--contrast " type="button "></button>
+            </div>
+            <div class="download__tools-scale ">
+              <input class="download__input" type="range " min="1 " max="10 ">
+            </div>
           </div>
           <div class="download__button-wrapper">
             <button class="download__button download__button--post " type="submit ">Запостить</button>

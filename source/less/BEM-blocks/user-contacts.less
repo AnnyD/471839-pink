@@ -26,3 +26,75 @@
 .user-info__input:placeholder {
   color: #1d2631;
 }
+@media (min-width: 660px) {
+  .user-contacts {
+    width: 620px;
+    padding: 0 20px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .visually-hidden--visual {
+    position: static;
+    clip: rect(0 0 0 0);
+    width: auto;
+    height: auto;
+    margin: auto;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d22856;
+    padding: 0 20px;
+    margin-bottom: 35px;
+  }
+
+  .user-contacts__wrapper {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .user-contacts__label {
+    order: 1;
+    padding-left: 20px;
+  }
+
+  .user-contacts__input {
+    margin: 0;
+    padding-right: 60px;
+  }
+
+  .user-contacts__label .user-app {
+    width: 660px;
+    background-color: inherit;
+    border: 2px solid #e5e5e5;
+  }
+
+  .user-app__legend {
+    width: 370px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 660px) {
+  .user-contacts {}
+}
+@media (min-width: 1200px) {
+  .user-contacts {
+    width: 940px;
+  }
+
+  .user-contacts__wrap {
+    display: flex;
+    width: 940px;
+    justify-content: space-around;
+    order: 1;
+  }
+
+  .user-contacts__wrapper {
+    width: 410px;
+    margin: 0;
+  }
+}

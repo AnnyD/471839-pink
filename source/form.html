@@ -3,77 +3,113 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html" aria-label="Логотип компании Пинк">Pink</a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Главная</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Фотографии</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Конкурс</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="index.html" aria-label="Логотип компании Пинк"><img src="img/logo-pink-white-mobile.svg" width="75" height="21" class="page-header__logo" alt="Логотип компании Пинк"></a>
+
+          <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Главная</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Фотографии</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Конкурс</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="challenge-content">
       <div class="challenge-content__header">
         <h1 class="challenge-content__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-      <p class="challenge-content__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      <p class="challenge-content__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
-      <form class="challenge-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="user-info">
-          <legend class="visually-hidden">Введите ваши данные</legend>
-          <label class="user-info__label" for="second-name">Фамилия:</label>
-          <input id="second-name" class="user-info__input" type="text" name="second-name" placeholder="Укажите фамилию*" required>
-          <label class="user-info__label" for="name">Имя:</label>
-          <input id="name" class="user-info__input" type="text" name="name" placeholder="Введите ваше имя*" required>
-          <label class="user-info__label" for="fathers-name">Отчество:</label>
-          <input id="fathers-name" class="user-info__input" type="text" name="fathers-name" placeholder="Ну и отчество тоже">
-        </fieldset>
-        <fieldset class="user-results">
-          <legend class="user-results__title">Ваши безбашенные достижения в путешествии</legend>
-          <label class="user-results__label" for="selfie">Сделал селфи с акулой</label>
-          <input id="selfie" class="user-results__input" type="checkbox" name="selfie" checked>
-          <label class="user-results__label" for="sunburn">Обгорел на пляже</label>
-          <input id="sunburn" class="user-results__input" type="checkbox" name="sunburn" checked>
-          <label class="user-results__label" for="chack">Видел Чака Норриса</label>
-          <input id="chack" class="user-results__input" type="checkbox" name="chack">
-          <label class="user-results__label" for="gift">Накупил сувениров</label>
-          <input id="gift" class="user-results__input" type="checkbox" name="gift">
-          <label class="user-results__label" for="tower">Удержал башню</label>
-          <input id="tower" class="user-results__input" type="checkbox" name="tower" checked>
-          <label class="user-results__label" for="hotel">Разгромил отель</label>
-          <input id="hotel" class="user-results__input" type="checkbox" name="hotel">
-        </fieldset>
-        <fieldset class="user-contacts">
-          <legend class="visually-hidden">Укажите Ваши контактные данные</legend>
-          <label class="user-contacts__label" for="tel">Номер телефона</label>
-          <input id="tel" class="user-contacts__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
-          <label class="user-contacts__label" for="email">Адрес почты</label>
-          <input id="email" class="user-contacts__input" type="email" name="email" placeholder="Введите почту*" required>
-        </fieldset>
-        <fieldset class="user-app">
-          <legend class="user-app__legend">С каким приложением путешествовали?</legend>
-          <label class="user-app__label" for="app-1">Pink для iOS</label>
-          <input id="app-1" class="user-app__input" type="radio" name="app" checked>
-          <label class="user-app__label" for="app-2">Pink на Android</label>
-          <input id="app-2" class="user-app__input" type="radio" name="app">
-          <label class="user-app__label" for="app-3">Windows Phone</label>
-          <input id="app-3" class="user-app__input" type="radio" name="app">
-        </fieldset>
-        <div class="user-comments">
-          <label class="user-comments__label" for="comments">Опишите свои эмоции</label>
-          <textarea id="comments" class="user-comments__textarea" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </div>
-        <button class="challenge-form__button" type="submit" aria-label="Кнопка Отправить форму">Отправить форму</button>
-        <p class="challenge-form__text"><span class="challenge-form__pic">*</span> - Обязательные поля</p>
-      </form>
+      <div class="challenge-wrapper">
+        <form class="challenge-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="user-info">
+            <legend class="visually-hidden">Введите ваши данные</legend>
+            <div class="user-info__wrapper">
+              <label class="user-info__label" for="second-name">Фамилия:</label>
+              <input id="second-name" class="user-info__input" type="text" name="second-name" placeholder="Укажите фамилию*" required>
+            </div>
+            <div class="user-info__wrapper">
+              <label class="user-info__label" for="name">Имя:</label>
+              <input id="name" class="user-info__input" type="text" name="name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div class="user-info__wrapper">
+              <label class="user-info__label" for="fathers-name">Отчество:</label>
+              <input id="fathers-name" class="user-info__input" type="text" name="fathers-name" placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="user-results">
+            <legend class="user-results__title">Ваши безбашенные достижения в путешествии</legend>
+            <div class="user-results__wrap">
+              <div class="user-results__wrapper">
+                <label class="user-results__label" for="selfie">Сделал селфи с акулой</label>
+                <input id="selfie" class="user-results__input" type="checkbox" name="selfie" checked>
+              </div>
+              <div class="user-results__wrapper">
+                <label class="user-results__label" for="sunburn">Обгорел на пляже</label>
+                <input id="sunburn" class="user-results__input" type="checkbox" name="sunburn" checked>
+              </div>
+              <div class="user-results__wrapper">
+                <label class="user-results__label" for="chack">Видел Чака Норриса</label>
+                <input id="chack" class="user-results__input" type="checkbox" name="chack">
+              </div>
+              <div class="user-results__wrapper">
+                <label class="user-results__label" for="gift">Накупил сувениров</label>
+                <input id="gift" class="user-results__input" type="checkbox" name="gift">
+              </div>
+              <div class="user-results__wrapper">
+                <label class="user-results__label" for="tower">Удержал башню</label>
+                <input id="tower" class="user-results__input" type="checkbox" name="tower" checked>
+              </div>
+              <div class="user-results__wrapper">
+                <label class="user-results__label" for="hotel">Разгромил отель</label>
+                <input id="hotel" class="user-results__input" type="checkbox" name="hotel">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="user-contacts">
+            <legend class="visually-hidden visually-hidden--visual">Контактная информация</legend>
+            <div class="user-contacts__wrap">
+              <div class="user-contacts__wrapper">
+                <label class="user-contacts__label" for="tel">Номер телефона</label>
+                <input id="tel" class="user-contacts__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="user-contacts__wrapper">
+                <label class="user-contacts__label" for="email">Адрес почты</label>
+                <input id="email" class="user-contacts__input" type="email" name="email" placeholder="Введите почту*" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="user-app">
+            <legend class="user-app__legend">С каким приложением путешествовали?</legend>
+            <label class="user-app__label" for="app-1">Pink для iOS</label>
+            <input id="app-1" class="user-app__input" type="radio" name="app" checked>
+            <label class="user-app__label" for="app-2">Pink на Android</label>
+            <input id="app-2" class="user-app__input" type="radio" name="app">
+            <label class="user-app__label" for="app-3">Windows Phone</label>
+            <input id="app-3" class="user-app__input" type="radio" name="app">
+          </fieldset>
+          <fieldset class="user-comments">
+            <legend class="user-comments__legend" for="comments">Опишите свои эмоции</legend>
+            <textarea id="comments" class="user-comments__textarea" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <div class="challenge-form__wrapper">
+            <button class="challenge-form__button" type="submit" aria-label="Кнопка Отправить форму">Отправить форму</button>
+            <p class="challenge-form__text"><span class="challenge-form__pic">*</span> - Обязательные поля</p>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="main-footer">
       <a class="main-footer__link" href="index.html">

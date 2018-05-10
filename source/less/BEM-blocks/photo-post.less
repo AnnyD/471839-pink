@@ -55,11 +55,48 @@
   line-height: 24px;
 }
 
-.photo-post__heart {}
-
 .photo-post__likes {
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
   text-transform: uppercase;
+}
+@media (min-width: 660px) {
+  .photo-gallery {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .photo-post__wrap {
+    display: flex;
+    width: 620px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .photo-post {
+    margin-left: 20px;
+  }
+
+  .photo-post__wrapper {
+    min-height: 155px;
+  }
+  /*
+
+
+
+
+  .photo-post__image {
+    width: 300px;
+    height: auto;
+  }
+
+
+
+  .photo-post__image--panorama {
+    width: 660px;
+    height: 510px;
+    margin: 0 auto;
+  }*/
 }
