@@ -1,10 +1,13 @@
 .user-comments {
+  width: 320px;
   padding: 0 20px;
   margin: 0 auto 48px;
+  border: none;
 }
 
-.user-comments__label {
-  display: block;
+.user-comments__legend {
+  font-size: 14px;
+  line-height: 18px;
   padding: 0 20px;
   text-transform: uppercase;
   color: #d22856;
@@ -20,10 +23,36 @@
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
-  border-radius: 2px;
+  margin: 0 auto;
 }
 
 .user-comments__textarea::placeholder {
   padding: 0;
   color: #283645;
+}
+@media (min-width: 660px) {
+  .user-comments {
+    width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
+    border: 2px solid #e5e5e5;
+  }
+
+  .user-comments__textarea {
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .user-comments {
+    width: 960px;
+    margin-top: 40px;
+  }
+
+  .user-comments__textarea {
+    display: block;
+    width: 820px;
+    margin: 50px auto;
+  }
 }

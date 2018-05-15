@@ -21,7 +21,29 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+@media (min-width: 660px) {
+  .page-header__wrapper {
+    min-height: 108px;
+  }
 
-.page-header__logo {
-  display: none;
+  .page-header {
+    width: 660px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .page-header__container {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    width: 150px;
+    border: none;
+  }
 }

@@ -25,3 +25,39 @@
 .challenge-form__pic {
   color: #d22856;
 }
+@media (min-width: 660px) {
+  .challenge-wrapper {
+    width: 660px;
+  }
+
+  .challenge-form {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+  .challenge-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 65px;
+  }
+
+  .challenge-form__button {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .challenge-wrapper {
+    width: 1200px;
+  }
+
+  .challenge-form {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+}

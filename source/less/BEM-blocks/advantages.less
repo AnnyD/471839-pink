@@ -1,16 +1,16 @@
 .advantages {
   margin: 0 auto 45px;
   width: 320px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center 655px;
-  padding-bottom: 290px;
-  background-color: #f2f2f2;
 }
 
 .advantages__wrapper {
   width: 280px;
   margin: 0 auto;
+  background-color: #f2f2f2;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 325px;
 }
 
 .advantages__text-wrapper {
@@ -49,4 +49,74 @@
   font-weight: 400;
   width: 280px;
   text-align: center;
+}
+@media (min-width: 660px) {
+  .advantages {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .advantages__text {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .advantages__text:first-child {
+    margin-bottom: 0;
+  }
+
+  .advantages__text:last-child {
+    margin-top: 0;
+  }
+
+  .advantages__wrapper {
+    width: 660px;
+    background-color: #f2f2f2;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 40px;
+    background-size: 265px 485px;
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
+
+  .advantages__list {
+    margin-left: 300px;
+  }
+
+  .advantages__descriptions,
+  .advantages__title {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .advantages__wrapper {
+    min-height: 600px;
+    width: 1200px;
+    background-image: url("../img/iphone-screen-mobile@1x.png"), url("../img/iphone-screen-mobile@1x.png"), url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 181px 330px;
+    background-position: 190px 40px, 500px 40px, 825px 40px;
+  }
+
+  .advantages__list {
+    width: 940px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 340px;
+  }
+
+  .advantages__title {
+    text-align: center;
+  }
+
+  .advantages__descriptions {
+    text-align: center;
+  }
 }

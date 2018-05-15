@@ -3,45 +3,51 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__link" href="#" aria-label="Логотип компании Пинк">
-          <img src="#" class="page-header__logo" alt="Логотип компании Пинк">Pink
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a class="page-header__link" href="#" aria-label="Логотип компании Пинк">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="21" class="page-header__logo" alt="Логотип компании Пинк">
         </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Главная</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Фотографии</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Конкурс</a></li>
+            <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Главная</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Фотографии</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">Конкурс</a></li>
-          <li class="main-nav__list-item"><a class="main-nav__list-link" href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
       <section class="download-app">
-        <a class="download-app__button" href="https://www.apple.com/itunes/" aria-label="Скачать приложение">Скачать приложение</a>
-        <ul class="download-app__icon">
-          <li class="download-app__icon-item"><a class="download-app__icon-link" href="https://www.apple.com/itunes/" aria-label="Скачать для Apple">Apple</a></li>
-          <li class="download-app__icon-item"><a class="download-app__icon-link" href="https://play.google.com/store" aria-label="Скачать для Android">Android</a></li>
-          <li class="download-app__icon-item"><a class="download-app__icon-link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" aria-label="Скачать для Windows">Windows</a></li>
-        </ul>
-        <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="download-app__wrapper">
+          <p class="download-app__title">Взгляните на жизнь иначе!</p>
+          <a class="download-app__button" href="https://www.apple.com/itunes/" aria-label="Скачать приложение">Скачать приложение</a>
+          <ul class="download-app__icon">
+            <li class="download-app__icon-item"><a class="download-app__icon-link" href="https://www.apple.com/itunes/" aria-label="Скачать для Apple">Apple</a></li>
+            <li class="download-app__icon-item"><a class="download-app__icon-link" href="https://play.google.com/store" aria-label="Скачать для Android">Android</a></li>
+            <li class="download-app__icon-item"><a class="download-app__icon-link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows" aria-label="Скачать для Windows">Windows</a></li>
+          </ul>
+          <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Пинк для мобильных телефонов</h1>
       <section class="advantages">
+        <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
+        <div class="advantages__text-wrapper">
+          <p class="advantages__text">Устали от серости мегаполиса?</p>
+          <p class="advantages__text">Нам есть, что вам<br> предложить!</p>
+        </div>
         <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
-          <div class="advantages__text-wrapper">
-            <p class="advantages__text">Устали от серости мегаполиса?</p>
-            <p class="advantages__text">Нам есть, что вам предложить!</p>
-          </div>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -58,22 +64,33 @@
           </ul>
         </div>
       </section>
+      <section class="research">
+        <h2 class="visually-hidden">Результаты исследований</h2>
+        <div class="research__wrapper">
+          <p class="research__title">Эффект<br> на 24 часа!</p>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="research__link">Узнать больше об исследовании</a>
+        </div>
+      </section>
       <section class="review slider">
-        <h2 class="visually-hidden">Отзывы пользователей о приложении Пинк</h3>
-          <ul class="review__list">
-            <li class="review__item">
-              <cite class="review__autor">Николай Петров</cite>
-              <blockquote class="review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
-            </li>
-            <li class="review__item">
-              <cite class="review__autor">Автор 2</cite>
-              <blockquote class="review__comment">«Отзыв 2»</blockquote>
-            </li>
-            <li class="review__item">
-              <cite class="review__autor">Автор 3</cite>
-              <blockquote class="review__comment">«Отзыв 3»</blockquote>
-            </li>
-          </ul>
+        <h2 class="visually-hidden">Отзывы пользователей о приложении Пинк</h2>
+        <ul class="review__list">
+          <li class="review__item">
+            <cite class="review__autor">Николай Петров
+            </cite>
+            <p class="review__text">25 лет, водитель трамвая</p>
+            <blockquote class="review__comment">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+          </li>
+          <li class="review__item">
+            <cite class="review__autor">Автор 2</cite>
+            <blockquote class="review__comment">«Отзыв 2»</blockquote>
+          </li>
+          <li class="review__item">
+            <cite class="review__autor">Автор 3</cite>
+            <blockquote class="review__comment">«Отзыв 3»</blockquote>
+          </li>
+        </ul>
+        <div class="slider__wrapper">
           <input id="toggle-1" class="slider__input" type="radio" name="toggle" checked>
           <input id="toggle-2" class="slider__input" type="radio" name="toggle">
           <input id="toggle-3" class="slider__input" type="radio" name="toggle">
@@ -82,26 +99,45 @@
             <label for="toggle-2" class="slider__label"></label>
             <label for="toggle-3" class="slider__label"></label>
           </div>
+        </div>
       </section>
       <section class="filter">
-  <h2 class="visually-hidden">Название пакета для скачивания</h2>
-        <div class="filter__wrapper">
-          <h3 class="filter__title">Стандарт</h3>
-          <p class="filter__price">3,99 USD</p>
-          <span class="filter__hit">Хит</span>
-        </div>
-        <ul class="filter__list">
-          <li class="filter__item">Розовый фильтр</li>
-          <li class="filter__item">Смайлики</li>
-          <li class="filter__item">Комментарии</li>
-        </ul>
-        <input id="btn-1" class="slider__input" type="radio" name="toggle">
-        <input id="btn-2" class="slider__input" type="radio" name="toggle" checked>
-        <input id="btn-3" class="slider__input" type="radio" name="toggle">
-        <div class="slider__toggle">
-          <label for="btn-1" class="slider__label"></label>
-          <label for="btn-2" class="slider__label"></label>
-          <label for="btn-3" class="slider__label"></label>
+        <h2 class="visually-hidden">Название пакета для скачивания</h2>
+        <table class="filter__tariff">
+          <tr class="tariff-table__row">
+            <th class="tariff-table__head">Пустой</th>
+            <th class="tariff-table__head">База</th>
+            <th class="tariff-table__head">Стандарт</th>
+            <th class="tariff-table__head">Анлим</th>
+          </tr>
+          <tr class="tariff-table__row">
+            <td class="tariff-table__cell">Розовый фильтр</td>
+            <td class="tariff-table__cell">Розовый фильтр</td>
+            <td class="tariff-table__cell">Розовый фильтр</td>
+            <td class="tariff-table__cell">Розовый фильтр</td>
+          </tr>
+          <tr class="tariff-table__row">
+            <td class="tariff-table__cell">Смайлики</td>
+            <td class="tariff-table__cell">Смайлики</td>
+            <td class="tariff-table__cell">Смайлики</td>
+            <td class="tariff-table__cell">Смайлики</td>
+          </tr>
+          <tr class="tariff-table__row">
+            <td class="tariff-table__cell">Комментарии</td>
+            <td class="tariff-table__cell">Комментарии</td>
+            <td class="tariff-table__cell">Комментарии</td>
+            <td class="tariff-table__cell">Комментарии</td>
+          </tr>
+        </table>
+        <div class="slider__wrapper">
+          <input id="btn-1" class="slider__input" type="radio" name="toggle">
+          <input id="btn-2" class="slider__input" type="radio" name="toggle" checked>
+          <input id="btn-3" class="slider__input" type="radio" name="toggle">
+          <div class="slider__toggle">
+            <label for="btn-1" class="slider__label"></label>
+            <label for="btn-2" class="slider__label"></label>
+            <label for="btn-3" class="slider__label"></label>
+          </div>
         </div>
       </section>
     </main>
@@ -120,14 +156,40 @@
           </li>
           <li class="contacts__item">
             <b class="contacts__title">Приезжайте в гости</b>
-            <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__text">ул. Большая<br> Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
       <div class="contacts__map">
-        <img src="img/bg-map-mobile@1x.png" width="#" height="#" alt="Карта проезда">
+        <img src="#" width=" " height=" " alt="Карта проезда">
       </div>
     </section>
+    <footer class="main-footer main-footer--index">
+      <div class="main-footer__logo--wrap">
+        <a class="main-footer__link" href="index.html">
+      <img class="main-footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип приложения Пинк">
+          </a>
+      </div>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/" aria-label="Ссылка на сайт Твиттер">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Ссылка на сайт Фейсбук">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com" aria-label="Ссылка на сайт Ютуб">Ютуб</a>
+          </li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив продвинутого html и css">
+          <img class="copyright__logo" src="img/logo-htmlacademy-red.svg" width="27" height="33" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
   </body>
 
 </html>
