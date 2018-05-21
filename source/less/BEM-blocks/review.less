@@ -1,6 +1,7 @@
 .review {
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 59px;
 }
 
 .review__list {
@@ -14,6 +15,11 @@
   margin: 0;
 }
 
+.review__item:nth-child(2),
+.review__item:nth-child(3) {
+  display: none;
+}
+
 .review__text {
   display: none;
 }
@@ -25,7 +31,7 @@
   font-weight: 700;
   text-align: center;
   font-style: normal;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
 }
 
 .review__comment {
@@ -54,7 +60,14 @@
   }
 
   .review__autor {
-    margin-bottom: 15px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .review__item:nth-child(2),
+  .review__item:nth-child(3) {
+    display: none;
   }
 
   .review__text {
@@ -66,7 +79,8 @@
 
   .review__comment {
     width: 620px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 35px;
     font-size: 18px;
     line-height: 30px;
     order: -1;

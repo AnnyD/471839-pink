@@ -8,26 +8,41 @@
 
 .page-header__wrapper {
   position: relative;
-  height: 68px;
-  border-bottom: 1px solid #000001;
-  padding: 0 20px;
+  height: 69px;
+  border-bottom: 1px solid #000000;
+  padding: 22px 20px 0;
 }
 
 .page-header__link {
-  color: inherit;
-  font-size: 22px;
-  line-height: 32px;
-  vertical-align: middle;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 0;
+}
+
+.page-header__logo--decktop,
+.page-header__logo--tablet {
+  display: none;
+}
+
+.page-header__logo:hover {
+  background-image: url("logo-pink-hover.svg");
 }
 @media (min-width: 660px) {
   .page-header__wrapper {
-    min-height: 108px;
+    min-height: 110px;
+    padding-top: 20px;
   }
 
   .page-header {
     width: 660px;
+  }
+
+  .page-header__logo--mobile {
+    display: none;
+  }
+
+  .page-header__logo--tablet {
+    display: block;
+    width: 148px;
+    height: 53px;
   }
 }
 @media (min-width: 1200px) {
@@ -40,10 +55,16 @@
     display: flex;
     width: 940px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .page-header__wrapper {
+    margin: 0;
     width: 150px;
     border: none;
+    padding: 0;
+    height: 45px;
+    padding-top: 21px;
   }
 }

@@ -13,7 +13,9 @@
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__link" href="#" aria-label="Логотип компании Пинк">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="21" class="page-header__logo" alt="Логотип компании Пинк">
+          <img class="page-header__logo page-header__logo--mobile" src="img/logo-pink-white-mobile.svg" width="75" height="23"  alt="Логотип компании Пинк">
+          <img class="page-header__logo page-header__logo--tablet" src="img/logo-pink-white-tablet.svg" width="75" height="23"  alt="Логотип компании Пинк">
+          <img class="page-header__logo page-header__logo--decktop" src="img/logo-pink-white-mobile.svg" width="75" height="23"  alt="Логотип компании Пинк">
         </a>
           <button class="main-nav__toggle" type="button" aria-label="Открыть главное меню"></button>
         </div>
@@ -67,7 +69,7 @@
       <section class="research">
         <h2 class="visually-hidden">Результаты исследований</h2>
         <div class="research__wrapper">
-          <p class="research__title">Эффект<br> на 24 часа!</p>
+          <p class="research__title">Эффект на 24 часа!</p>
           <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a href="#" class="research__link">Узнать больше об исследовании</a>
         </div>
@@ -106,27 +108,27 @@
         <table class="filter__tariff">
           <tr class="tariff-table__row">
             <th class="tariff-table__head">Пустой</th>
-            <th class="tariff-table__head">База</th>
-            <th class="tariff-table__head">Стандарт</th>
-            <th class="tariff-table__head">Анлим</th>
+            <th class="tariff-table__head">База<span class="filter__tariff__price">1,99 USD</span></th>
+            <th class="tariff-table__head">Стандарт<span class="filter__tariff__price">3,99 USD</span></th>
+            <th class="tariff-table__head">Анлим<span class="filter__tariff__price">9,99 USD</span></th>
           </tr>
           <tr class="tariff-table__row">
             <td class="tariff-table__cell">Розовый фильтр</td>
-            <td class="tariff-table__cell">Розовый фильтр</td>
-            <td class="tariff-table__cell">Розовый фильтр</td>
-            <td class="tariff-table__cell">Розовый фильтр</td>
+            <td class="tariff-table__cell tariff-table__cell--yes"></td>
+            <td class="tariff-table__cell tariff-table__cell--yes"></td>
+            <td class="tariff-table__cell tariff-table__cell--yes"></td>
           </tr>
           <tr class="tariff-table__row">
             <td class="tariff-table__cell">Смайлики</td>
-            <td class="tariff-table__cell">Смайлики</td>
-            <td class="tariff-table__cell">Смайлики</td>
-            <td class="tariff-table__cell">Смайлики</td>
+            <td class="tariff-table__cell tariff-table__cell--no"></td>
+            <td class="tariff-table__cell tariff-table__cell--yes"></td>
+            <td class="tariff-table__cell tariff-table__cell--yes"></td>
           </tr>
           <tr class="tariff-table__row">
             <td class="tariff-table__cell">Комментарии</td>
-            <td class="tariff-table__cell">Комментарии</td>
-            <td class="tariff-table__cell">Комментарии</td>
-            <td class="tariff-table__cell">Комментарии</td>
+            <td class="tariff-table__cell tariff-table__cell--no"></td>
+            <td class="tariff-table__cell tariff-table__cell--no"></td>
+            <td class="tariff-table__cell tariff-table__cell--yes"></td>
           </tr>
         </table>
         <div class="slider__wrapper">
@@ -147,21 +149,22 @@
         <p class="contacts__main-title">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <b class="contacts__title">Звоните</b>
+            <p class="contacts__title">Звоните:</p>
             <p class="contacts__text">+7 (812) 555-66-66</p>
           </li>
           <li class="contacts__item">
-            <b class="contacts__title">Пишите</b>
+            <p class="contacts__title">Пишите:</p>
             <p class="contacts__text">mail@htmlacademy.ru</p>
           </li>
           <li class="contacts__item">
-            <b class="contacts__title">Приезжайте в гости</b>
+            <p class="contacts__title">Приезжайте в гости:</p>
             <p class="contacts__text">ул. Большая<br> Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
       <div class="contacts__map">
-        <img src="#" width=" " height=" " alt="Карта проезда">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3997.197567472444!2d30.3187059276108!3d59.93879950185339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m5!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!3m2!1d59.9387942!2d30.323083299999997!4m0!5e0!3m2!1sru!2sru!4v1526591880119"
+          width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
     <footer class="main-footer main-footer--index">
