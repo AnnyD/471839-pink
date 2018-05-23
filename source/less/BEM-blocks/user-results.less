@@ -1,14 +1,15 @@
 .user-results {
   width: 280px;
   padding: 0 20px;
-  margin: 63px auto 0;
+  margin: 25px auto 0;
+  background: pink;
   border: none;
 }
 
 .user-results__title {
   width: 240px;
   padding: 0;
-  margin-bottom: 40px;
+  margin: 39px auto;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -17,23 +18,39 @@
 }
 
 .user-results__label {
+  position: relative;
   display: block;
   font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 60px;
+  line-height: 38px;
   padding-left: 70px;
-  padding-top: 3px;
   color: #283645;
   width: 280px;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #fff;
+    border: 1px solid gray;
+  }
 }
 
-.user-results__label:last-of-type {
-  margin-bottom: 0;
+.user-results__input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .user-results__wrapper {
-  margin-bottom: 19px;
+  margin-bottom: 44px;
 }
+
 @media (min-width: 660px) {
   .user-results {
     width: 620px;

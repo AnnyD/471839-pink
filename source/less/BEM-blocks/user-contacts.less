@@ -1,7 +1,7 @@
 .user-contacts {
   width: 280px;
   padding: 0;
-  margin: 0 auto;
+  margin: 30px auto 0;
   border: none;
 }
 
@@ -9,6 +9,8 @@
   display: block;
   text-transform: uppercase;
   color: #d22856;
+  height: 30px;
+  line-height: 30px;
   margin-bottom: 5px;
   padding-left: 22px;
 }
@@ -31,29 +33,12 @@
   color: #1d2631;
 }
 
-.user-contacts__wrap {
-  margin-top: 30px;
-}
 @media (min-width: 660px) {
   .user-contacts {
     width: 620px;
     padding: 0 20px;
+    margin-top: 51px;
     border: 2px solid #e5e5e5;
-  }
-
-  .visually-hidden--visual {
-    position: static;
-    clip: rect(0 0 0 0);
-    width: auto;
-    height: auto;
-    margin: auto;
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #d22856;
-    padding: 0 20px;
-    margin-bottom: 35px;
   }
 
   .user-contacts__wrapper {
@@ -79,16 +64,8 @@
     background-color: inherit;
     border: 2px solid #e5e5e5;
   }
+}
 
-  .user-app__legend {
-    width: 370px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 660px) {
-  .user-contacts {}
-}
 @media (min-width: 1200px) {
   .user-contacts {
     width: 940px;

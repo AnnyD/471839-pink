@@ -5,19 +5,24 @@
   border: none;
 }
 
+.user-info__wrapper {
+  margin-bottom: 16px;
+}
+
 .user-info__label {
   display: block;
   text-transform: uppercase;
   color: #d22856;
+  height: 30px;
+  line-height: 30px;
   margin-bottom: 5px;
   padding-left: 23px;
 }
 
 .user-info__input {
   width: 100%;
-  height: 62px;
-  padding-left: 20px;
-  margin-bottom: 18px;
+  height: 64px;
+  padding: 0 20px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
@@ -30,18 +35,23 @@
   font-size: 18px;
   line-height: 30px;
 }
+
 @media (min-width: 660px) {
   .user-info {
+    order: -2;
     width: 620px;
   }
 
   .user-info__wrapper {
     display: flex;
     align-items: baseline;
+    margin-bottom: 51px;
   }
 
   .user-info__label {
-    padding-right: 20px;
+    padding-right: 18px;
+    padding-left: 0;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

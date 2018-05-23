@@ -32,7 +32,7 @@
       </div>
       <p class="challenge-content__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="challenge-content__text--hidden">Пожалуйста, заполните форму ниже:</span>
       </p>
-      <div class="challenge-wrapper">
+      <div class="challenge-content__wrapper">
         <form class="challenge-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="user-info">
             <legend class="visually-hidden">Введите ваши данные</legend>
@@ -50,7 +50,7 @@
             </div>
           </fieldset>
           <fieldset class="user-results">
-            <legend class="user-results__title">Ваши безбашенные достижения в путешествии</legend>
+            <p class="user-results__title">Ваши безбашенные достижения в путешествии</p>
             <div class="user-results__wrap">
               <div class="user-results__wrapper">
                 <label class="user-results__label" for="selfie">Сделал селфи с акулой</label>
@@ -92,16 +92,24 @@
             </div>
           </fieldset>
           <fieldset class="user-app">
-            <legend class="user-app__legend">С каким приложением путешествовали?</legend>
-            <label class="user-app__label" for="app-1">Pink для iOS</label>
-            <input id="app-1" class="user-app__input" type="radio" name="app" checked>
-            <label class="user-app__label" for="app-2">Pink на Android</label>
-            <input id="app-2" class="user-app__input" type="radio" name="app">
-            <label class="user-app__label" for="app-3">Windows Phone</label>
-            <input id="app-3" class="user-app__input" type="radio" name="app">
+            <p class="user-app__legend">С каким приложением путешествовали?</p>
+            <div class="user-app__wrap">
+              <div class="user-app__wrapper">
+                <label class="user-app__label" for="app-1">Pink для iOS</label>
+                <input id="app-1" class="user-app__input" type="radio" name="app" checked>
+              </div>
+              <div class="user-app__wrapper">
+                <label class="user-app__label" for="app-2">Pink на Android</label>
+                <input id="app-2" class="user-app__input" type="radio" name="app">
+              </div>
+              <div class="user-app__wrapper">
+                <label class="user-app__label" for="app-3">Windows Phone</label>
+                <input id="app-3" class="user-app__input" type="radio" name="app">
+              </div>
+            </div>
           </fieldset>
           <fieldset class="user-comments">
-            <legend class="user-comments__legend" for="comments">Опишите свои эмоции</legend>
+            <p class="user-comments__legend" for="comments">Опишите свои эмоции</p>
             <textarea id="comments" class="user-comments__textarea" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="challenge-form__wrapper">
