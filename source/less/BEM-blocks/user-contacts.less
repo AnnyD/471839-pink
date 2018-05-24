@@ -96,18 +96,23 @@
 
 @media (min-width: 1200px) {
   .user-contacts {
-    width: 940px;
+    width: 100%;
+    margin-top: 16px;
   }
 
   .user-contacts__wrap {
     display: flex;
-    width: 940px;
-    justify-content: space-around;
+    justify-content: space-between;
     order: 1;
+    margin: 35px 0 12px;
   }
 
   .user-contacts__wrapper {
-    width: 410px;
+    width: 375px;
     margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }

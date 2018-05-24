@@ -74,18 +74,27 @@
 }
 @media (min-width: 1200px) {
   .user-results {
-    width: 940px;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 65px;
   }
 
   .user-results__wrap {
     display: flex;
     flex-wrap: wrap;
-    width: 940px;
+    justify-content: space-between;
+    margin-bottom: 12px;
   }
 
   .user-results__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    width: 26%;
+    margin: 0 0 43px;
+
+    &:nth-child(odd) {
+      order: 0;
+    }
+
+    &:nth-child(even) {
+      order: 1;
+    }
   }
 }
