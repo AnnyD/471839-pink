@@ -26,6 +26,10 @@
   text-transform: uppercase;
 }
 
+.challenge-form__additional-text {
+  display: none;
+}
+
 .challenge-form__pic {
   color: #d22856;
 }
@@ -37,23 +41,37 @@
   }
 
   .challenge-form__wrapper {
+    order: 6;
     display: flex;
     justify-content: space-between;
     width: 660px;
     margin: 0 auto;
     padding: 0 20px;
-    margin-top: 65px;
+    margin-top: 70px;
   }
 
   .challenge-form__button {
     margin: 0;
+    width: 300px;
   }
 }
 @media (min-width: 1200px) {
   .challenge-form {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     flex-shrink: 0;
     flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .challenge-form__wrapper {
+    width: 100%;
+    padding: 0;
+    margin-top: 65px;
+  }
+
+  .challenge-form__additional-text {
+    display: inline;
   }
 }
