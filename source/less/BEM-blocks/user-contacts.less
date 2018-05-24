@@ -5,6 +5,10 @@
   border: none;
 }
 
+.user-contacts__legend {
+  display: none;
+}
+
 .user-contacts__label {
   display: block;
   text-transform: uppercase;
@@ -35,23 +39,47 @@
 
 @media (min-width: 660px) {
   .user-contacts {
+    order: 3;
     width: 620px;
     padding: 0 20px;
-    margin-top: 51px;
+    margin-top: 65px;
     border: 2px solid #e5e5e5;
+  }
+
+  .user-contacts__legend {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    width: 260px;
+    padding: 0 20px;
+    margin: -10px auto 0;
+    background: #fff;
+    color: #d22856;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .user-contacts__wrap {
+    margin-top: 38px;
+    padding: 0 38px;
   }
 
   .user-contacts__wrapper {
     display: flex;
     align-items: baseline;
     flex-direction: column;
-    width: 500px;
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
   }
 
   .user-contacts__label {
     order: 1;
     padding-left: 20px;
+    margin: 10px 0 0;
   }
 
   .user-contacts__input {
