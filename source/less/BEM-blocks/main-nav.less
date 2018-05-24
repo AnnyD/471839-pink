@@ -32,18 +32,24 @@
 
 .main-nav__toggle {
   position: absolute;
+  content: "";
   width: 23px;
   height: 23px;
-  top: 0;
-  right: 0;
+  top: 21px;
+  right: 19px;
   font-size: 0;
   padding: 0;
   background: none;
   border: none;
-  background-image: url("../../img/icon-menu-cross.svg");
+  background-image: url("../img/icon-menu-cross.svg");
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+@media (min-width: 660px) {
+  .main-nav__toggle {
+    top: 45px;
+  }
 }
 @media (min-width: 1200px) {
   .main-nav__list {
@@ -77,6 +83,9 @@
   .main-nav__list-link:focus,
   .main-nav__list-link:hover {
     color: #d22856;
+  }
+  .main-nav__list-link:active::after {
+    box-shadow: 2px 2px 2px #ffffff;
   }
 
   .main-nav__list-item {
