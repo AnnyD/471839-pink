@@ -1,8 +1,14 @@
 .modal-request {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
   width: 320px;
   min-height: 380px;
   margin: 0 auto;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  background: #fff;
+  display: none;
 }
 
 .modal-request__title {
@@ -63,6 +69,7 @@
 @media (min-width: 1200px) {
   .modal-request {
     width: 780px;
+    min-height: auto;
   }
 
   .modal-request__title {
