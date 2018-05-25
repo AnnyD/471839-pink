@@ -1,0 +1,113 @@
+[33mcommit 5e7cc984aa85c8e95d51d8e6fffd6ec091ea910b[m[33m ([m[1;36mHEAD -> [m[1;32mmodule5-task1[m[33m, [m[1;31morigin/module5-task1[m[33m)[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Mon May 21 23:19:02 2018 +0300
+
+    Начала пиксель перфект
+
+[33mcommit fedcb03968fce67c736bbbc60e3d033f2e58f836[m[33m ([m[1;31mupstream/master[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 5166dc7 f6a7f76
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue May 15 22:01:14 2018 +0300
+
+    Merge pull request #4 from AnnyD/module4-task1
+
+[33mcommit f6a7f76005291a815010c7d6172100e341cdac89[m[33m ([m[1;31morigin/module4-task1[m[33m, [m[1;32mmodule4-task1[m[33m)[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Mon May 14 22:24:42 2018 +0300
+
+    Застилизовала форму в разделе загрузки фото
+
+[33mcommit 49cc42c857431e0b1993019fb61fb9e661642ed6[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Sun May 13 21:11:53 2018 +0300
+
+    Завершила стилизацию страницы с фото
+
+[33mcommit 245e01b28a4f8df1e2639d3e50fd84b8b2c19f14[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Thu May 10 22:22:47 2018 +0300
+
+    Адаптивная стилизация двух страниц и частично третьей
+
+[33mcommit 87c9177726ea44b0cfcace3074324d8b162ee98e[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Sun May 6 19:56:00 2018 +0300
+
+    Адаптивная верстка первой страницы
+
+[33mcommit dfe946b995e9367e29274ffd0b5ce490bcbb0b20[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Thu May 3 21:00:43 2018 +0300
+
+    Начала задание Верстаем адаптивные сетки
+
+[33mcommit 5166dc75529a052598c63067377beae2ed7b2b4c[m
+Merge: c63b7fc 3d20756
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sat Apr 28 14:04:44 2018 +0300
+
+    Merge pull request #3 from AnnyD/module3-task1
+
+[33mcommit 3d20756cd386eee6840a0263ec38cf21daa5f3f0[m[33m ([m[1;31morigin/module3-task1[m[33m)[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Fri Apr 27 18:45:17 2018 +0300
+
+    Стилизация трех страниц мобильной версии
+
+[33mcommit c63b7fc1fcd58b4834b5cea49e5995fa770f42c7[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Fri Apr 20 21:25:41 2018 +0300
+
+    :kissing_cat: Добавляет сборку Less на Gulp
+
+[33mcommit 9f47e07c68a24384c04415bd36dc37e87c55232d[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Fri Apr 20 21:25:35 2018 +0300
+
+    :gift: Нарезает графику для вёрстки
+
+[33mcommit 412313773a0e1e9641c6a0b6dc79a864dbdde256[m
+Merge: 13d3ab2 c39d24d
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Fri Apr 20 20:58:55 2018 +0300
+
+    Merge pull request #2 from AnnyD/module2-task1
+
+[33mcommit c39d24de280396802f324ea32a79c517d7572b21[m[33m ([m[1;31morigin/module2-task1[m[33m)[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Fri Apr 20 20:44:01 2018 +0300
+
+    Исправила ошибки в form.html
+
+[33mcommit 5e2c805836a37f0954fedd72e7e7abc310761fed[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Thu Apr 19 23:06:59 2018 +0300
+
+    Исправила мелкие ошибки в разметке
+
+[33mcommit b9ba9fc5ef4e6c04f73eaa6d40f4efbee6046f9a[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Thu Apr 19 06:34:42 2018 +0300
+
+    Разметка
+
+[33mcommit 13d3ab29f84cd69d9dce1f9d85be5ddfc649ee12[m
+Merge: 12eded9 eee846e
+Author: surfingLori <heather.and.pinetrees@gmail.com>
+Date:   Sun Apr 15 18:56:21 2018 +0300
+
+    Merge pull request #1 from AnnyD/module1-task1
+    
+    Проверяем рабочий процесс
+
+[33mcommit eee846eb710348d96e6367d98412fcbfacc9febf[m[33m ([m[1;31morigin/module1-task1[m[33m)[m
+Author: AnnyD <36837101+AnnyD@users.noreply.github.com>
+Date:   Sun Apr 15 18:34:20 2018 +0300
+
+    Добавила наставника
+
+[33mcommit 12eded95d874985e0ce7cef15e5d87e215e3d56e[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Sat Apr 14 14:33:30 2018 +0300
+
+    :hatching_chick:

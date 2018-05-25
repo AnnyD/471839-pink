@@ -1,17 +1,21 @@
 .user-app {
   width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  margin-bottom: 40px;
+  margin: 25px auto 0;
+  padding: 0 0 8px 0;
   border: none;
   background-color: #f2f2f2;
 }
 
-.user-app__legend {
+.user-app__wrap {
   width: 280px;
+  margin: 0 auto;
+}
+
+.user-app__legend {
+  width: 240px;
   font-size: 14px;
   line-height: 18px;
-  margin: 0 20px 30px;
+  margin: 40px auto 35px;
   padding: 0;
   color: #d22856;
   text-align: center;
@@ -19,30 +23,111 @@
 }
 
 .user-app__label {
+  position: relative;
   display: block;
   font-size: 18px;
-  line-height: 30px;
-  margin: 0 20px;
+  line-height: 38px;
+  margin: 0;
   padding: 0 0 0 70px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #e5e5e5;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  &:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #283645;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  &:active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #d22856;
+    background: #ffffff;
+    border-radius: 50%;
+  }
 }
+
+.user-app__input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.user-app__input:checked + .user-app__label::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #d22856;
+  background-color: #d22856;
+  border-radius: 50%;
+}
+
+.user-app__wrapper {
+  margin-bottom: 36px;
+}
+
 @media (min-width: 660px) {
   .user-app__legend {
-    width: 370px;
+    width: 360px;
     padding: 0 20px;
-    margin: 0 auto 40px;
+    margin: -10px auto 0;
+    background: #ffffff;
   }
 
   .user-app {
+    order: 2;
     width: 620px;
-    padding-left: 60px;
+    padding: 0 58px;
     background-color: inherit;
     border: 2px solid #e5e5e5;
-    margin-top: 50px;
+    margin-top: 15px;
   }
+
+  .user-app__wrap {
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 55px;
+  }
+
+  .user-app__label {
+    padding-left: 60px;
+  }
+
+
 }
 @media (min-width: 1200px) {
   .user-app {
-    order: -1;
     margin: 0;
+    width: 434px;
+    padding: 0;
+    margin-left: 71px;
+    margin-top: -5px;
+  }
+
+  .user-app__wrap {
+    margin: 48px 74px 56px;
+    width: auto;
   }
 }

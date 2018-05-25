@@ -1,14 +1,15 @@
 .user-results {
   width: 280px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 25px auto 0;
+  background-color: #f2f2f2;
   border: none;
 }
 
 .user-results__title {
   width: 240px;
   padding: 0;
-  margin-bottom: 40px;
+  margin: 39px auto;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -17,45 +18,127 @@
 }
 
 .user-results__label {
+  position: relative;
   display: block;
   font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 60px;
-  padding-left: 60px;
+  line-height: 38px;
+  padding-left: 70px;
   color: #283645;
   width: 280px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+  &:hover:before,
+  &:focus:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    border: 2px solid #283645;
+  }
+  &:active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    border: 2px solid #d22856;
+  }
 }
 
-.user-results__label:last-of-type {
-  margin-bottom: 0;
+.user-results__input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
+
+.user-results__input:checked {
+  background: red;
+}
+
+.user-results__input:checked + .user-results__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/icon-yes-red.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.user-results__wrapper {
+  margin-bottom: 44px;
+}
+
 @media (min-width: 660px) {
   .user-results {
+    order: 4;
     width: 620px;
-    padding-left: 60px;
+    padding: 0 60px;
+    margin-top: 65px;
     border: 2px solid #e5e5e5;
+    background: transparent;
   }
 
   .user-results__title {
     width: 450px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
+    margin: -10px auto 45px;
+    background: #fff;
+  }
+
+  .user-results__label {
+    padding-left: 60px;
   }
 }
 @media (min-width: 1200px) {
   .user-results {
-    width: 940px;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 65px;
   }
 
   .user-results__wrap {
     display: flex;
     flex-wrap: wrap;
-    width: 940px;
+    justify-content: space-between;
+    margin-bottom: 12px;
   }
 
   .user-results__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    width: 26%;
+    margin: 0 0 43px;
+
+    &:nth-child(odd) {
+      order: 0;
+    }
+
+    &:nth-child(even) {
+      order: 1;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 23%;
+    }
   }
 }
