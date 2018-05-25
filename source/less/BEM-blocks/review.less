@@ -1,103 +1,80 @@
-.review {
-  width: 320px;
-  margin: 0 auto;
-  padding-bottom: 74px;
+.reviewer__name {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 18px;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.review__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.review__item {
-  padding: 0;
-  margin: 0;
-}
-
-.review__item:nth-child(2),
-.review__item:nth-child(3) {
-  display: none;
+.reviewer {
+  margin-top: 40px;
+  margin-bottom: 14px;
 }
 
 .review__text {
-  display: none;
-}
-
-.review__autor {
-  display: block;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
   text-align: center;
-  font-style: normal;
-  margin-bottom: 13px;
-}
-
-.review__comment {
-  width: 280px;
-  margin: 0 auto;
+  color: #283645;
   font-size: 14px;
   line-height: 30px;
+  margin: 0 auto;
+  font-weight: 400;
+  margin-top: 0;
+  padding: 0 20px;
+  margin-bottom: 35px;
+  display: block;
+}
+
+.review__add {
+  display: none;
+  font-size: 14px;
+  font-weight: 300;
   color: #283645;
   text-align: center;
 }
 
-
 @media (min-width: 660px) {
-  .review {
-    width: 660px;
+  .review__text {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .reviewer__name {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .review__add {
+    display: block;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+
+  .reviewer {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    order: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .review__text {
+    width: 710px;
     margin: 0 auto;
   }
 
-  .review__item {
-    display: flex;
-    flex-direction: column;
+  .reviewer__name {
+    font-size: 24px;
+    margin-bottom: 7px;
   }
 
-  .review__autor {
-    margin-bottom: 2px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .review__item:nth-child(2),
-  .review__item:nth-child(3) {
-    display: none;
-  }
-
-  .review__text {
-    display: block;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .review__comment {
-    width: 620px;
-    margin-top: 25px;
-    margin-bottom: 35px;
+  .review__add {
     font-size: 18px;
-    line-height: 30px;
-    order: -1;
+    font-weight: 400;
   }
-}
-@media (min-width: 1200px) {
-  .review__comment {
-    margin-top: 298px;
+
+  .reviewer {
+    margin-top: 35px;
   }
-    .review {
-      width: 940px;
-      margin: 0 auto;
-    }
-    .review__comment {
-      width: 692px;
-      margin: o auto;
-    }
-    .review__autor {
-      font-size: 24px;
-    }
-    .review__text {
-      font-size: 18px;
-    }
 }

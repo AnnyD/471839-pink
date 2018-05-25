@@ -1,0 +1,174 @@
+.panorama__participant {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 28px;
+  box-sizing: border-box;
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-right: 0;
+  padding-bottom: 20px;
+}
+
+.panorama__author {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #283645;
+}
+
+.panorama__last-time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.panorama__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.panorama__likes {
+  color: #d22856;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.panorama__likes svg {
+  margin-right: 19px;
+}
+
+.panorama {
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "панорама дня";
+    position: absolute;
+    width: 140px;
+    height: 29px;
+    display: block;
+    right: 20px;
+    top: 0;
+    text-transform: uppercase;
+    color: white;
+    background-color: #d22856;
+    z-index: 100;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+  }
+}
+
+.panorama a {
+  width: 100%;
+}
+
+.panorama__photo {
+  display: block;
+  height: 137px;
+  width: 100%;
+}
+
+.panorama__object {
+  position: relative;
+}
+
+@media (min-width: 660px) {
+  .panorama {
+    margin-bottom: 50px;
+
+    &::before {
+      top: 57px;
+    }
+  }
+
+  .panorama__photo {
+    height: 509px;
+    width: 100%;
+  }
+
+  .panorama__participant {
+    width: 620px;
+    display: flex;
+    min-height: 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    padding-left: 26px;
+    padding-right: 27px;
+    padding-bottom: 15px;
+  }
+
+  .panorama__description {
+    width: 512px;
+    order: 3;
+  }
+
+  .panorama__author {
+    width: 140px;
+    display: flex;
+    order: 1;
+    align-items: baseline;
+  }
+
+  .panorama__last-time {
+    margin-left: 5px;
+  }
+
+  .panorama__likes {
+    display: flex;
+    order: 2;
+    align-items: center;
+    min-width: 125px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .panorama__likes svg {
+    margin-right: 0;
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: 960px) {
+  .panorama {
+    margin-bottom: 48px;
+
+    &::before {
+      height: 32px;
+      top: 53px;
+      right: 10px;
+    }
+  }
+
+  .panorama__photo {
+    height: 506px;
+    width: 100%;
+  }
+
+  .panorama__participant {
+    width: 940px;
+    min-height: 96px;
+    padding-bottom: 24px;
+    padding-right: 30px;
+  }
+
+  .panorama__description {
+    width: 869px;
+    margin-bottom: 0;
+  }
+}

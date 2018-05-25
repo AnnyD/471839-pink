@@ -1,0 +1,30 @@
+.page-container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  &--wide,
+  &--full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 660px) {
+  .page-container {
+    width: 660px;
+
+    &--full {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .page-container {
+    width: 960px;
+
+    &--full {
+      width: 100%;
+    }
+  }
+}
