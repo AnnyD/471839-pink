@@ -9,7 +9,7 @@
   text-align: center;
   width: 255px;
   padding: 0;
-  margin: 0 auto 45px;
+  margin: 37px auto 45px;
 }
 
 .download__text-first {
@@ -30,6 +30,7 @@
 .download__tools {
   width: 280px;
   margin: 0 auto;
+  margin-top: 60px;
   display: flex;
   justify-content: space-around;
 }
@@ -92,10 +93,29 @@
   margin-bottom: 12px;
 }
 
+.download__button--post:hover,
+ .download__button--post:focus{
+   color: #ffffff;
+  background-color: #d22856;
+}
+.download__button--post:active{
+color: rgba(255, 255, 255, 0.5);
+}
 .download__button--cancel {
-  color: #283645;
-  border-color: #283645;
-  opacity: 0.2;
+  color: #dddfe0;
+  border-color: #dddfe0;
+  background-color: #f2f2f2;
+}
+.download__button--cancel:hover,
+.download__button--cancel:focus {
+  color: #b5b9be;
+  border-color: #b5b9be;
+}
+
+
+.download__button--cancel:active {
+color: #cbced2;
+  background-color: #b5b9be;
 }
 
 .download__tools-scale {

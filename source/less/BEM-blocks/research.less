@@ -7,10 +7,9 @@
     width: 660px;
     margin: 0 auto 100px;
   }
+
   .research__title-span {
     display: block;
-
-
   }
 
   .research__wrapper {
@@ -42,6 +41,16 @@
     color: #d22856;
     margin-top: 10px;
   }
+
+  .research__link:focus,
+  .research__link:hover {
+    display: block;
+    color: #000000;
+  }
+
+  .research__link:active {
+    opacity: 0.5;
+  }
 }
 @media (min-width: 1200px) {
   .research {
@@ -49,9 +58,9 @@
     width: 1200px;
     margin: 0 auto;
   }
-    .research__title-span {
-    display: inline-block;
 
+  .research__title-span {
+    display: inline-block;
   }
 
   .research__wrapper {

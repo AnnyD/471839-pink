@@ -27,15 +27,38 @@
   width: 280px;
 
   &:before {
-    content: ' ';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
     display: block;
     width: 38px;
     height: 38px;
-    background: #fff;
-    border: 1px solid gray;
+    background: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+  &:hover:before ,
+    &:focus:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    border: 2px solid #283645;
+  }
+  &:active:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    border: 2px solid #d22856;
   }
 }
 
@@ -46,7 +69,18 @@
   height: 1px;
   margin: -1px;
 }
-
+.user-results__input:checked + .input-results__label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-image: url(../img/icon-yes-red.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .user-results__wrapper {
   margin-bottom: 44px;
 }
