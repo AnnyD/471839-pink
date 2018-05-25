@@ -37,8 +37,8 @@
     background: #ffffff;
     border: 2px solid #e5e5e5;
   }
-  &:hover:before ,
-    &:focus:before{
+  &:hover:before,
+  &:focus:before{
     content: "";
     position: absolute;
     left: 0;
@@ -69,17 +69,22 @@
   height: 1px;
   margin: -1px;
 }
-.user-results__input:checked + .input-results__label::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 38px;
-    height: 38px;
-    background-image: url(../img/icon-yes-red.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+
+.user-results__input:checked {
+  background: red;
+}
+
+.user-results__input:checked + .user-results__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/icon-yes-red.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .user-results__wrapper {
   margin-bottom: 44px;
