@@ -17,14 +17,19 @@
   font-size: 0;
 }
 
-.page-header__logo--decktop,
+.page-header__logo {
+  fill: #fff;
+}
+
+.page-header__logo--desktop,
 .page-header__logo--tablet {
   display: none;
 }
 
 .page-header__logo:hover {
-  background-image: url("../img/logo-pink-hover.svg");
+  fill: #d22856;
 }
+
 @media (min-width: 660px) {
   .page-header__wrapper {
     min-height: 110px;
@@ -66,5 +71,13 @@
     padding: 0;
     height: 45px;
     padding-top: 21px;
+  }
+
+  .page-header__logo--tablet {
+    display: none;
+  }
+
+  .page-header__logo--desktop {
+    display: block;
   }
 }
