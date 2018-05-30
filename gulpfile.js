@@ -69,7 +69,6 @@ gulp.task("copy", function() {
     .pipe(gulp.dest("build"));
 });
 
-
 gulp.task("serve", function() {
   server.init({
     server: "build/",
@@ -88,6 +87,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "style",
+    "minifyjs",
     "html"
     );
 });

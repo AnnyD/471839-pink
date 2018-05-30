@@ -1,0 +1,77 @@
+.logo {
+  transform: translate3d(-70px, -5px, 0);
+}
+
+.logo--footer {
+  transform: translate3d(0, 0, 0);
+}
+
+.logo--header {
+  fill: #fff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.logo__glasses {
+  opacity: 0;
+}
+
+.logo__star {
+  opacity: 0;
+}
+
+.logo--footer:hover .logo__word--footer {
+  fill: #d22856;
+}
+
+.logo--footer:active {
+  opacity: 0.3;
+}
+
+.logo__word--footer {
+  fill: #000;
+}
+
+.logo__parth-glasses--footer {
+  opacity: 0;
+}
+
+.logo__glasses--footer {
+  opacity: 1;
+  fill: #d22856;
+}
+
+.logo__star--footer {
+  fill: #d22856;
+}
+
+.logo-stars--footer {
+  opacity: 0;
+}
+
+@media (min-width: 660px) {
+  .logo {
+    transform: translate(0);
+  }
+
+  .logo__glasses {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 960px) {
+  .logo__star {
+    opacity: 1;
+  }
+
+  .logo-stars--footer {
+    opacity: 1;
+    fill: #fff;
+  }
+}
