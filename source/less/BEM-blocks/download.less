@@ -1,220 +1,188 @@
-.download {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.download__text {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  width: 255px;
-  padding: 0;
-  margin: 37px auto 45px;
-}
-
-.download__text-first {
-  display: inline-block;
-  width: 210px;
-}
-
-.download__photo {
-  background-color: #f2f2f2;
-}
-
-.download__image {
+.download__link {
+  color: white;
+  text-decoration: none;
   display: block;
-  margin: 0 auto 42px;
-  padding-top: 20px;
-}
-
-.download__tools {
-  width: 280px;
-  margin: 0 auto;
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.download__tool {
-  border: none;
-  width: 44px;
-  height: 44px;
-  background-color: inherit;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.download__tool--clip {
-  background-image: url("../img/icon-editor-crop-red.svg");
-}
-
-.download__tool--fill {
-  background-image: url("../img/icon-editor-fill.svg");
-  opacity: 0.4;
-}
-
-.download__tool--contrast {
-  background-image: url("../img/icon-editor-contrast.svg");
-  opacity: 0.4;
-}
-
-.download__tools-scale {
-  width: 280px;
-  margin: 0 auto 28px;
-}
-
-.download__input {
-  width: 100%;
-}
-
-.download__button-wrapper {
-  padding-top: 38px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-  border-top: 2px solid #e5e5e5;
-}
-
-.download__button {
-  display: block;
-  width: 280px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 18px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.download__loading {
+  padding: 15px 0;
+  border: 2px solid white;
+  border-radius: 35px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 280px;
+  box-sizing: border-box;
+  margin-bottom: 33px;
+}
+
+.download__loading:hover {
+  background-color: white;
   color: #d22856;
-  border: 3px solid #d22856;
-  border-radius: 25px;
+}
+
+.download__loading:active {
+  background-color: white;
+  color: #d22856;
+  opacity: 0.3;
+}
+
+.download__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0;
   margin: 0 auto;
+  width: 205px;
 }
 
-.download__button--post {
-  margin-bottom: 12px;
+.download__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  width: 232px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.download__button--post:hover,
- .download__button--post:focus{
-   color: #ffffff;
-  background-color: #d22856;
-}
-.download__button--post:active{
-color: rgba(255, 255, 255, 0.5);
-}
-.download__button--cancel {
-  color: #dddfe0;
-  border-color: #dddfe0;
-  background-color: #f2f2f2;
-}
-.download__button--cancel:hover,
-.download__button--cancel:focus {
-  color: #b5b9be;
-  border-color: #b5b9be;
+.download__paper {
+  height: 270px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1d2631;
+  width: 100%;
+  padding-top: 30px;
 }
 
-
-.download__button--cancel:active {
-color: #cbced2;
-  background-color: #b5b9be;
-}
-
-.download__tools-scale {
+.download__title {
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  min-width: 195px;
+  text-align: center;
   display: none;
 }
 
-.download__tools-scale--mobile {
-  display: block;
+.download {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0% 29%;
+  padding-top: 394px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
 }
+
+.download__wrapper {
+  margin: 0 auto;
+  background: #1d2631;
+  padding-top: 28px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 @media (min-width: 660px) {
   .download {
-    width: 660px;
-  }
-
-  .download__text {
-    width: 620px;
-    margin: 0 auto 70px;
-    font-size: 18px;
-  }
-
-  .download__text-first {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .download__photo {
-    display: flex;
-    padding: 57px 20px 50px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-
-  .download__image {
     padding: 0;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-size: 700px auto;
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    padding-left: 20px;
+    padding-top: 57px;
+    height: 617px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
+  }
+
+  .download__paper {
+    width: 300px;
+    background-color: transparent;
     margin: 0;
   }
 
-  .download__button-wrapper {
-    margin: 0 auto;
+  .download__list {
+    width: 210px;
   }
 
-  .download__tools-scale {
+  .download__title {
     display: block;
-    width: 200px;
+    width: 190px;
+    margin: 0 auto;
+    line-height: 50px;
+    margin-bottom: 30px;
   }
 
-  .download__tools-scale--mobile {
-    display: none;
+  .download__loading {
+    width: 300px;
+    margin-bottom: 46px;
   }
 
-  .download__tool {
-    display: none;
-  }
-
-  .download__tools-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .download__tools {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    /*width: 60px;*/
+  .download__description {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 38px;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 960px) {
   .download {
-    width: 1200px;
+    min-height: 742px;
+    padding-top: 80px;
+    padding-left: 10px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-size: 1050px auto;
+    background-position: -29% 104%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 
-  .download__text {
-    width: 620px;
-    margin: 0 auto 70px;
-    font-size: 18px;
+  .download__paper {
+    min-height: 510px;
+    width: 300px;
   }
 
-  .download__text-first {
-    display: block;
-    margin: 0 auto;
+  .download__title {
+    font-size: 50px;
+    width: 100%;
+    line-height: 58px;
+    margin-bottom: 58px;
   }
 
-  .download__photo {
-    display: flex;
-    width: 940px;
-    padding: 57px 20px 55px;
-    margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 80px;
-    justify-content: space-between;
+  .download__loading {
+    font-size: 21px;
+    margin-bottom: 65px;
   }
 
-  .download__image {
-    padding: 0;
-    margin: 0;
+  .download__description {
+    margin-top: 53px;
   }
 
-  .download__tools-wrapper {
-    flex-direction: column;
-    width: 410px;
+  .download__list {
+    padding-top: 2px;
   }
 }

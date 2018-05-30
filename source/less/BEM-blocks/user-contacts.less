@@ -36,19 +36,28 @@
   line-height: 30px;
   color: #283645;
 }
+
 .user-contacts__input:hover,
- .user-contacts__input:focus{
+.user-contacts__input:focus{
   border: 2px solid #283645;
   outline: none;
 }
+
 .user-contacts__input:active{
   border: 2px solid #d22856;
   outline: none;
 }
+
 .user-contacts__input::placeholder {
   color: #283645;
   font-size: 18px;
   line-height: 30px;
+}
+
+.user-contacts__email-wrapper,
+.user-contacts__phone-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 @media (min-width: 660px) {
@@ -106,9 +115,45 @@
     background-color: inherit;
     border: 2px solid #e5e5e5;
   }
+
+  .user-contacts__phone-wrapper {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      right: 2px;
+      width: 60px;
+      background-color: #e5e5e5;
+      z-index: 2;
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .user-contacts__email-wrapper {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      right: 2px;
+      width: 60px;
+      background-color: #e5e5e5;
+      z-index: 2;
+      background-image: url(../img/icon-mail.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .user-contacts {
     width: 100%;
     margin-top: 16px;

@@ -37,6 +37,7 @@
     background: #ffffff;
     border: 2px solid #e5e5e5;
   }
+
   &:hover:before,
   &:focus:before{
     content: "";
@@ -49,6 +50,7 @@
     background: #ffffff;
     border: 2px solid #283645;
   }
+
   &:active:before {
     content: "";
     position: absolute;
@@ -70,10 +72,6 @@
   margin: -1px;
 }
 
-.user-results__input:checked {
-  background: red;
-}
-
 .user-results__input:checked + .user-results__label::after {
   content: "";
   position: absolute;
@@ -82,7 +80,7 @@
   display: block;
   width: 38px;
   height: 38px;
-  background-image: url(../img/icon-yes-red.svg);
+  background-image: url(../img/icon-yes.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -111,7 +109,8 @@
     padding-left: 60px;
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 960px) {
   .user-results {
     width: 100%;
     margin-top: 65px;
