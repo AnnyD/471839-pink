@@ -1,23 +1,15 @@
 .contacts-list {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .contacts-list__item {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
+}
 
-  &--call {
-    margin-bottom: 24px;
-  }
-
-  &:nth-child(2) {
-    margin-bottom: 27px;
-    padding-left: 4px;
-  }
-
-  &--email {
-    margin-bottom: 28px;
-  }
+.contacts-list__item--email {
+  margin-bottom: 20px;
 }
 
 .contacts-list__item p:first-child {
@@ -25,7 +17,7 @@
   font-size: 18px;
   font-weight: bold;
   display: block;
-  margin-bottom: 5px;
+  margin: 0;
 }
 
 .contacts-list__item p:last-child {
@@ -34,12 +26,7 @@
   font-weight: 300;
   width: 248px;
   margin: 0 auto;
-  margin-top: 0;
   display: block;
-}
-
-.contacts-list__item--welcome p:first-child {
-  margin-bottom: 7px;
 }
 
 @media (min-width: 660px) {
@@ -57,7 +44,7 @@
     text-align: center;
     display: inline-block;
     flex-grow: 1;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 
     &--welcome {
       margin-bottom: 0;
@@ -75,11 +62,6 @@
 
   .contacts-list__item--welcome p:last-child {
     line-height: 28px;
-    margin-top: 10px;
-  }
-
-  .contacts-list__item--call p:first-child {
-    margin-bottom: 7px;
   }
 }
 

@@ -1,0 +1,138 @@
+.instruments-item {
+  display: block;
+
+  &:last-child {
+    margin-right: 10px;
+  }
+}
+
+.instruments-item svg {
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    fill: #000;
+    opacity: 0.6;
+  }
+
+  &:active {
+    fill: #d22856;
+    opacity: 1;
+  }
+}
+
+.instruments-item--active svg {
+  fill: #d22856;
+  opacity: 1;
+  cursor: default;
+
+  &:hover {
+    fill: #d22856;
+    opacity: 1;
+  }
+}
+
+.instruments-item__range {
+  display: none;
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background: #000;
+}
+
+.instruments-item__range--active {
+  display: block;
+}
+
+.instruments-item__slider {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  margin-top: -7px;
+  background-color: white;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+@media (min-width: 660px) {
+  .instruments-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #dddfe0;
+    height: 71px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .instruments-item__range {
+    position: relative;
+    display: block;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    width: 75%;
+    margin-left: 30px;
+    margin-right: 17px;
+  }
+
+  .instruments-item svg {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    fill: #d22856;
+    opacity: 1;
+    cursor: default;
+
+    &:hover {
+      fill: #d22856;
+      opacity: 1;
+    }
+  }
+
+  .instruments-item--fill svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .instruments-item--contrast svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+  }
+}
+
+@media (min-width: 960px) {
+  .instruments-item--crop svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .instruments-item--fill svg {
+    width: 48px;
+    height: 43px;
+  }
+
+  .instruments-item:last-child svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .instruments-item__range {
+    width: 70%;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .instruments-item {
+    align-items: center;
+  }
+}

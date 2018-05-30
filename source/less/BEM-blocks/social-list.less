@@ -1,21 +1,21 @@
 .social-list {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   padding: 0;
   width: 178px;
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 31px;
+  list-style: none;
 }
 
-.social-list__item {
-  border: 3px solid #e9ebec;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
+.social-list__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 
   &:hover {
     border: 3px solid #283645;
@@ -27,10 +27,8 @@
   }
 }
 
-.social-list__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.social-list__link svg {
+  fill: #d22856;
 }
 
 @media (min-width: 660px) {

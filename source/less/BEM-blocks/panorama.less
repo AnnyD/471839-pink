@@ -57,7 +57,7 @@
     content: "панорама дня";
     position: absolute;
     width: 140px;
-    height: 29px;
+    height: 35px;
     display: block;
     right: 20px;
     top: 0;
@@ -79,8 +79,9 @@
 
 .panorama__photo {
   display: block;
+  margin: auto;
   height: 137px;
-  width: 100%;
+  max-width: 320px;
 }
 
 .panorama__object {
@@ -98,7 +99,7 @@
 
   .panorama__photo {
     height: 509px;
-    width: 100%;
+    max-width: 700px;
   }
 
   .panorama__participant {
@@ -149,15 +150,14 @@
     margin-bottom: 48px;
 
     &::before {
-      height: 32px;
       top: 53px;
-      right: 10px;
+      right: 130px;
     }
   }
 
   .panorama__photo {
     height: 506px;
-    width: 100%;
+    max-width: 1200px;
   }
 
   .panorama__participant {
