@@ -50,8 +50,11 @@
 }
 
 .panorama {
+  margin: 0 auto;
+  max-width: 660px;
   margin-bottom: 20px;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "панорама дня";
@@ -80,8 +83,8 @@
 .panorama__photo {
   display: block;
   margin: auto;
-  height: 137px;
-  max-width: 320px;
+  height: auto;
+  max-width: 100%;
 }
 
 .panorama__object {
@@ -90,6 +93,7 @@
 
 @media (min-width: 660px) {
   .panorama {
+    max-width: 960px;
     margin-bottom: 50px;
 
     &::before {
@@ -98,7 +102,7 @@
   }
 
   .panorama__photo {
-    height: 509px;
+    height: 510px;
     max-width: 700px;
   }
 
@@ -147,6 +151,7 @@
 
 @media (min-width: 960px) {
   .panorama {
+    max-width: 1200px;
     margin-bottom: 48px;
 
     &::before {
@@ -156,7 +161,8 @@
   }
 
   .panorama__photo {
-    height: 506px;
+    min-height: auto;
+    min-width: auto;
     max-width: 1200px;
   }
 

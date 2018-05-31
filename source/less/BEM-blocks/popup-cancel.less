@@ -40,7 +40,17 @@
 
 .popup-cancel {
   padding-top: 45px;
-  box-shadow: 0 0 9px 0 black;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1),
+    -20px 0 30px -15px rgba(0, 0, 0, 0.1),
+    20px 0 30px -15px rgba(0, 0, 0, 0.1),
+    0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate3d(-50%, -50%, 0);
+  background: #fff;
+  z-index: 999;
   display: none;
 }
 
